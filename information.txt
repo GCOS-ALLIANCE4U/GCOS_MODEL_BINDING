@@ -1,0 +1,23 @@
+PROJET SAP UI5 => MODEL BINDING
+
+MODELS
+
+Models are two types = > Client side and server side models. Models are containers which store data in it. When models are initialised in SAP UI5 framework, a couple of instance will be created. 
+One instance is for basic model, one instance is for data binding. 
+
+Data binding instance is initialized when you are initializing a model.
+
+Models are used in case of data binding, to fetch and to communicate with the data base. Models are responsable to pull all data from data base to the fron end which is app that running on the browser. 
+
+We have two types of data: 1) Which is available directly in your local file 2) The real time data which will be fetch from your database.
+
+For SAP UI5, first we have to read data from data base, and store this data in model. After that the data will be pulled from the model to the table. For this reason we use data binding. 
+
+We have two types of models => Client-Side Models and Server-Side Models
+
+CLIENT SIDE MODELS => JSON Model, Resource Model, XML Model
+
+SERVER SIDE MODELS => Odata V2 Model, Odata V4 Model
+
+JSON => JavaScript Object Notation Data
+
