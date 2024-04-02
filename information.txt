@@ -21,3 +21,27 @@ SERVER SIDE MODELS => Odata V2 Model, Odata V4 Model
 
 JSON => JavaScript Object Notation Data
 
+To see the JSON data, go to the https://sapui5.hana.ondemand.com/#/api/sap.m.List
+
+Then on this page inspect, and go to the network tab. 
+
+Then click on this lien  https://sapui5.hana.ondemand.com/#/entity/sap.m.List
+
+Then choose an example like sample : List - deletion, as soon as we choose a sample, the data will be read. 
+
+In the table, we can see all the products which come from a json file. If we can search the json file, it is ProductCollection
+file. When we double click on this file, we can see all the data as JSON format.
+
+JSON data is very less if we compare with it XML data. We can see the size in the size tab. 
+
+Then open OData Service https://www.odata.org/, click on the Developers and then Reference Services.
+
+We have three OData version. V4, V3, V2; we will use V2
+
+Open Northwind read only Service this is xml structure. Here the data is in the xml format
+
+
+
+
+
+
