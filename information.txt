@@ -1,6 +1,6 @@
-PROJET SAP UI5 => MODEL BINDING
+💜 PROJET SAP UI5 => MODEL BINDING 💚
 
-MODELS
+💜 MODELS
 
 Models are two types = > Client side and server side models. Models are containers which store data in it. When models are initialised in SAP UI5 framework, a couple of instance will be created. 
 One instance is for basic model, one instance is for data binding. 
@@ -32,13 +32,36 @@ Then choose an example like sample : List - deletion, as soon as we choose a sam
 In the table, we can see all the products which come from a json file. If we can search the json file, it is ProductCollection
 file. When we double click on this file, we can see all the data as JSON format.
 
-JSON data is very less if we compare with it XML data. We can see the size in the size tab. 
+💜 JSON data is very less if we compare with it XML data. We can see the size in the size tab. 
 
 Then open OData Service https://www.odata.org/, click on the Developers and then Reference Services.
 
 We have three OData version. V4, V3, V2; we will use V2
 
-Open Northwind read only Service this is xml structure. Here the data is in the xml format
+Open OData (read/write) Service this is xml structure. Here the data is in the xml format
+
+Go to the Products 
+
+First click it then write Products https://services.odata.org/V2/(S(trbi1k54c0ts1h0vpbloxdl4))/OData/OData.svc/
+
+https://services.odata.org/V2/(S(trbi1k54c0ts1h0vpbloxdl4))/OData/OData.svc/Products
+
+If I go to the Network tab, I can see the size of the this xml format = 1.9 kB
+
+Now write it in the JSON format and then reload the page to see the difference (add ?$format=json) = 1.4kB
+
+https://services.odata.org/V2/(S(trbi1k54c0ts1h0vpbloxdl4))/OData/OData.svc/Products?$format=json
+
+💜 JSON MODEL DECLARATION => two ways
+
+    1) You can declare JSON model directly inside manifest.json file
+    2) You can declare that model inside controller
+
+💚 In this example, I will declare JSON model directly inside manifest.json. 
+
+💚 Before we declare a JSON model, we need a data source to read data. 
+
+💚 First in the model folder, we create a local json file which is Product.json
 
 
 
