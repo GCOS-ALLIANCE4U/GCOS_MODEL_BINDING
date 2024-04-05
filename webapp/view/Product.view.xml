@@ -1,7 +1,98 @@
-<mvc:View controllerName="gcosmodelbinding.controller.Product"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content />
+<mvc:View
+    controllerName="gcosmodelbinding.controller.Product"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+
+        <!-- ProductJSONModel is the name of the model in the manifest, ProductCollection comes from Product.json -->
+            <Table id="table" items="{ProductJSONModel>/ProductCollection}">
+
+            <!-- Create column titles -->
+                <columns>
+                    <Column>
+                        <header>
+                            <Label text="Product Id">
+                               </Label>
+                        </header>
+                    </Column>
+
+                     <Column>
+                        <header>
+                            <Label text="Name">
+                               </Label>
+                        </header>
+                    </Column>
+
+                     <Column>
+                        <header>
+                            <Label text="Category">
+                               </Label>
+                        </header>
+                    </Column>
+
+                     <Column>
+                        <header>
+                            <Label text="Price">
+                               </Label>
+                        </header>
+                    </Column>
+
+                     <Column>
+                        <header>
+                            <Label text="Quantity">
+                               </Label>
+                        </header>
+                    </Column>
+
+                     <Column>
+                        <header>
+                            <Label text="Date Of Sale">
+                               </Label>
+                        </header>
+                    </Column>
+
+                     <Column>
+                        <header>
+                            <Label text="Status">
+                               </Label>
+                        </header>
+                    </Column>
+                </columns>
+
+            <!-- Create rows -->
+
+            <items>
+                <ColumnListItem vAlign="Inherit">
+
+            <!-- We define cells for each column. We have 7 columns, each column has a cell -->
+            <!-- For cell level binding, we do not use / -->
+                <cells>
+                    <Text text="{ProductJSONModel>ProductId}"></Text>
+
+                    <Text text="{ProductJSONModel>Name}"></Text>
+
+                    <Text text="{ProductJSONModel>Category}"></Text>
+
+                    <Text text="{ProductJSONModel>Price}"></Text>
+
+                    <Text text="{ProductJSONModel>Quantity}"></Text>
+
+                    <Text text="{ProductJSONModel>DateOfSale}"></Text>
+
+                    <Text text="{ProductJSONModel>Status}"></Text>
+                
+                </cells>
+                
+                </ColumnListItem>
+            </items>
+
+            </Table>
+        </content>
     </Page>
 </mvc:View>

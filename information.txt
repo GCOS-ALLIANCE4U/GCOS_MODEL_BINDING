@@ -1,5 +1,7 @@
 💜 PROJET SAP UI5 => MODEL BINDING 💚
 
+https://www.youtube.com/watch?v=5rnVfV9ZR_Y
+
 💜 MODELS
 
 Models are two types = > Client side and server side models. Models are containers which store data in it. When models are initialised in SAP UI5 framework, a couple of instance will be created. 
@@ -61,7 +63,62 @@ https://services.odata.org/V2/(S(trbi1k54c0ts1h0vpbloxdl4))/OData/OData.svc/Prod
 
 💚 Before we declare a JSON model, we need a data source to read data. 
 
-💚 First in the model folder, we create a local json file which is Product.json
+💚💚 1) First in the model folder, we create a local json file which is Product.json
+
+💚 Next open SAP UI5 SDK https://sapui5.hana.ondemand.com/
+
+💚 Then go to the samples and search for responsive tables
+
+💚 Next open the developer tools (inspect) and go to the Network. Then open first example = table columns
+
+💚 Search for product.json file and double click on it. Copy all data and paste it in the Product.json file
+
+💚💚 2) Then go to the manifest.json and create data source for json file.
+
+💚 In manifest.json, in the sap.app dcelare dataSources. Inside add data source name = ProductJSONData
+
+💚 Inside we declare our path for Product.json and type of our file
+
+💚💚 3) We have to assign DataSource to JSON Model
+
+💚 Declare a model inside manifest, inside sap.ui5 section, we have models section in which we have i18n.
+
+💚 i18n section, we can see model that have already been declared. We declare the second one = ProductJSONModel after that. 
+
+💚 Inside our model, type is JSON, we have to declare class name as a type. To find the class name, go to the SAP UI5 SDK 
+
+💚 Go to API Reference and search for JSONModel, copy class name and paste it as a class = sap.ui.model.json.JSONModel
+
+💚 Then we need dataSource which has been already created and the name of dataSource is ProductJSONData
+
+💚 We created our model inside manifest so it is accessible from anywhere, the scope is global
+
+💚 If I declare the same model inside controller, the scope is local that means the model is available only for this controller. 
+
+💚💚 4) Bind json data from model to view or controller.
+
+💚 Next go to the xml to create the table
+
+💚 Some extensions : SAPUI5 extensions, UI5 Tools, ovly-ui5-snippets
+
+💚 We will use responsive table, so go to the sap ui5 sdk, api reference and search for table. 
+
+💚 This is class name and it belongs to sap.m library. class sap.m.Table
+
+💚 In xml this library has been already declared. First create the titles of each column in xml, then we create the rows and bind data for each column
+
+💚 tag <items> in the table is used to create the rows. 
+
+💚 In table tag we pass these items by using items="{}" keyword to bind the data
+
+💚 We have three types binding types => aggregation, element, property binding.
+
+💚 Here we use aggregation binding
+
+💚 In the Product.json file, we have two types of data, ProductCollection and ProductCollectionStats. We will use ProductColllection.
+
+💚 
+
 
 
 
