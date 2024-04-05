@@ -119,8 +119,13 @@ https://services.odata.org/V2/(S(trbi1k54c0ts1h0vpbloxdl4))/OData/OData.svc/Prod
 
 💚 SAPUI5 Extension is necessary to see the reference of the function. Install it. 
 
-💚 
+💚 Now we create a button inside footer. We will get a JSON model from manifets. 
 
+💚 Open SAP SDK, search JSONModel. In the methods we can see that we have a couple of methods
+
+💚 To declare a model inside controller there is a syntax in the constructor 
+
+💚 new sap.ui.model.json.JSONModel(oData?, bObserve?)
 
 
 

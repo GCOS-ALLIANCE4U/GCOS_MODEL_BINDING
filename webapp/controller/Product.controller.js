@@ -13,7 +13,14 @@ sap.ui.define([
             },
 
             getJSONModel: function() {
-                
+                // we get instance of the model from manifest
+                // with the method getOwnerComponent, we will get instance of the component
+                // We get the constructor of JSON model, inside this there is oData which has ProductCollection
+                // this.getOwnerComponent
+                // this.getOwnerComponent().getModel('ProductJSONModel')
+                // this.getOwnerComponent().getModel('ProductJSONModel').getData()
+                // getData will return the data. 
+                var oModel = this.getOwnerComponent().getModel('ProductJSONModel').getData()
             }
         });
     });
