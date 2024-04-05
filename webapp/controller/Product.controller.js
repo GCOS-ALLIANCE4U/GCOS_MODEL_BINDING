@@ -10,6 +10,10 @@ sap.ui.define([
         return Controller.extend("gcosmodelbinding.controller.Product", {
             onInit: function () {
 
+            },
+
+            getJSONModel: function() {
+                
             }
         });
     });
