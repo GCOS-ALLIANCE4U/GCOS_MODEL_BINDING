@@ -94,5 +94,24 @@
 
             </Table>
         </content>
+
+        <!-- Add a button inside the footer -->
+
+        <footer>
+            <Bar design= "Auto" titleAlignment="None">
+            
+            <contentLeft>
+            </contentLeft>
+
+            <contentMiddle>
+            </contentMiddle>
+
+            <contentRight>
+                <Button text="Get Model" press="getJSONModel">
+                </Button>
+            </contentRight>
+
+            </Bar>
+        </footer>
     </Page>
 </mvc:View>
