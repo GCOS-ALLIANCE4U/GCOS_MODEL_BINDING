@@ -19,7 +19,7 @@ sap.ui.define([
                 // this.getOwnerComponent
                 // this.getOwnerComponent().getModel('ProductJSONModel')
                 // this.getOwnerComponent().getModel('ProductJSONModel').getData()
-                // getData will return the data. 
+                // getData will return the data from model. 
                 var oModel = this.getOwnerComponent().getModel('ProductJSONModel').getData()
             }
         });
