@@ -20,7 +20,12 @@ sap.ui.define([
                 // this.getOwnerComponent().getModel('ProductJSONModel')
                 // this.getOwnerComponent().getModel('ProductJSONModel').getData()
                 // getData will return the data from model. 
+
                 var oModel = this.getOwnerComponent().getModel('ProductJSONModel').getData()
+
+                // Next I want to set a new property,  I want to provide a new property inside the object
+
+                
             }
         });
     });
