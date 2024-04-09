@@ -9,108 +9,85 @@
         title="{i18n>title}"
     >
         <content>
-
-        <!-- ProductJSONModel is the name of the model in the manifest, ProductCollection comes from Product.json -->
-            <Table id="table" items="{ProductJSONModel>/ProductCollection}">
-
-            <!-- Create column titles -->
+            <!-- ProductJSONModel is the name of the model in the manifest, ProductCollection comes from Product.json -->
+            <Table
+                id="table"
+                items="{ProductJSONModel>/ProductCollection}"
+            >
+                <!-- Create column titles -->
                 <columns>
                     <Column>
                         <header>
-                            <Label text="Product Id">
-                               </Label>
+                            <Label text="Product Id"/>
                         </header>
                     </Column>
-
-                     <Column>
+                    <Column>
                         <header>
-                            <Label text="Name">
-                               </Label>
+                            <Label text="Name"/>
                         </header>
                     </Column>
-
-                     <Column>
+                    <Column>
                         <header>
-                            <Label text="Category">
-                               </Label>
+                            <Label text="Category"/>
                         </header>
                     </Column>
-
-                     <Column>
+                    <Column>
                         <header>
-                            <Label text="Price">
-                               </Label>
+                            <Label text="Price"/>
                         </header>
                     </Column>
-
-                     <Column>
+                    <Column>
                         <header>
-                            <Label text="Quantity">
-                               </Label>
+                            <Label text="Quantity"/>
                         </header>
                     </Column>
-
-                     <Column>
+                    <Column>
                         <header>
-                            <Label text="Date Of Sale">
-                               </Label>
+                            <Label text="Date Of Sale"/>
                         </header>
                     </Column>
-
-                     <Column>
+                    <Column>
                         <header>
-                            <Label text="Status">
-                               </Label>
+                            <Label text="Status"/>
                         </header>
                     </Column>
                 </columns>
-
-            <!-- Create rows -->
-
-            <items>
-                <ColumnListItem vAlign="Inherit">
-
-            <!-- We define cells for each column. We have 7 columns, each column has a cell -->
-            <!-- For cell level binding, we do not use / -->
-                <cells>
-                    <Text text="{ProductJSONModel>ProductId}"></Text>
-
-                    <Text text="{ProductJSONModel>Name}"></Text>
-
-                    <Text text="{ProductJSONModel>Category}"></Text>
-
-                    <Text text="{ProductJSONModel>Price}"></Text>
-
-                    <Text text="{ProductJSONModel>Quantity}"></Text>
-
-                    <Text text="{ProductJSONModel>DateOfSale}"></Text>
-
-                    <Text text="{ProductJSONModel>Status}"></Text>
-                
-                </cells>
-                
-                </ColumnListItem>
-            </items>
-
+                <!-- Create rows -->
+                <items>
+                    <ColumnListItem vAlign="Inherit">
+                        <!-- We define cells for each column. We have 7 columns, each column has a cell -->
+                        <!-- For cell level binding, we do not use / -->
+                        <cells>
+                            <!--  <Text text="{ProductJSONModel>ProductId}"></Text> -->
+                            <!-- Convert text tags to input to enter a value -->
+                            <Input value="{ProductJSONModel>ProductId}"/>
+                            <Input value="{ProductJSONModel>Name}"/>
+                            <Input value="{ProductJSONModel>Category}"/>
+                            <Input value="{ProductJSONModel>Price}"/>
+                            <Input value="{ProductJSONModel>Quantity}"/>
+                            <Input value="{ProductJSONModel>DateOfSale}"/>
+                            <Input value="{ProductJSONModel>Status}"/>
+                        </cells>
+                    </ColumnListItem>
+                </items>
             </Table>
         </content>
-
         <!-- Add a button inside the footer -->
-
         <footer>
-            <Bar design= "Auto" titleAlignment="None">
-            
-            <contentLeft>
-            </contentLeft>
-
-            <contentMiddle>
-            </contentMiddle>
-
-            <contentRight>
-                <Button text="Get Model" press="getJSONModel">
-                </Button>
-            </contentRight>
-
+            <Bar
+                design="Auto"
+                titleAlignment="None"
+            >
+                <contentLeft>
+                </contentLeft>
+                <contentMiddle>
+                </contentMiddle>
+                <contentRight>
+                    <Button
+                        text="Get Model"
+                        press="getJSONModel"
+                    />
+                </contentRight>
             </Bar>
         </footer>
     </Page>
