@@ -42,6 +42,7 @@ sap.ui.define([
                 console.log(myNewData)
 
                 // get entire data from model
+                // After changing the text tags with input tags, we can enter a new property and then we can see that we get this new property.
                 var myAllData = oModel.getData();
                 console.log(myAllData)
 

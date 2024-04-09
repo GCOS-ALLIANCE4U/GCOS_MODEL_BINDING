@@ -60,13 +60,13 @@
                         <cells>
                             <!--  <Text text="{ProductJSONModel>ProductId}"></Text> -->
                             <!-- Convert text tags to input to enter a value -->
-                            <Input value="{ProductJSONModel>ProductId}"/>
-                            <Input value="{ProductJSONModel>Name}"/>
-                            <Input value="{ProductJSONModel>Category}"/>
-                            <Input value="{ProductJSONModel>Price}"/>
-                            <Input value="{ProductJSONModel>Quantity}"/>
-                            <Input value="{ProductJSONModel>DateOfSale}"/>
-                            <Input value="{ProductJSONModel>Status}"/>
+                            <Input value="{path:'ProductJSONModel>ProductId'}"/>
+                            <Input value="{path:'ProductJSONModel>Name'}"/>
+                            <Input value="{path:'ProductJSONModel>Category'}"/>
+                            <Input value="{path:'ProductJSONModel>Price'}"/>
+                            <Input value="{path:'ProductJSONModel>Quantity'}"/>
+                            <Input value="{path:'ProductJSONModel>DateOfSale'}"/>
+                            <Input value="{path:'ProductJSONModel>Status'}"/>
                         </cells>
                     </ColumnListItem>
                 </items>

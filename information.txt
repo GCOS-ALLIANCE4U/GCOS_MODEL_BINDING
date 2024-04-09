@@ -163,7 +163,9 @@ https://services.odata.org/V2/(S(trbi1k54c0ts1h0vpbloxdl4))/OData/OData.svc/Prod
 
 💚 we will use two way mode, first convert all text tags to input tag to enter a new data. 
 
-💚 
+💚 Then add the binding mode to the input tag, for doing that search BindingMode in the SAP SDK
+
+💚 Use path and mode property sap.ui.model.BindingMode.TwoWay. 
 
 
 
