@@ -149,5 +149,19 @@ https://services.odata.org/V2/(S(trbi1k54c0ts1h0vpbloxdl4))/OData/OData.svc/Prod
 
 💚 this.getOwnerComponent().getModel('ProductJSONModel').getProperty("/ProductCollection") 
 
+💚 Then set the JSON model inside the Component. To do that first create createProductJSONmOdel in the model.js
+
+💚 Next set the JSONModel inside the component
+
+💚 Three types of binding modes => one way, two way, one time
+
+💚 ONE WAY => data will flow from model to view
+
+💚 TWO WAY => data will flow from model to view and also from view to model
+
+💚 ONE TIME => data will flow from model to view only once
+
+
+
 
 

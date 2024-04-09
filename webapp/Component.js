@@ -29,6 +29,10 @@ sap.ui.define([
 
                 // set the device model
                 this.setModel(models.createDeviceModel(), "device");
+
+                // set json model which has been created in the model.js
+                // but this is not necessary because we did it in manifest
+                // this.setModel(models.createProductJSONModel(), "ProductJSONModel");
             }
         });
     }

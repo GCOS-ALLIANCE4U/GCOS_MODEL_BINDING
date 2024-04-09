@@ -15,9 +15,23 @@ sap.ui.define([
 
         return {
             createDeviceModel: function () {
+                // device is a standard sp libriray
                 var oModel = new JSONModel(Device);
                 oModel.setDefaultBindingMode("OneWay");
                 return oModel;
-        }
+        },
+
+        // to set json model inside the component, create a function createProductJSONModel
+
+            createProductJSONModel : function() {
+                // write the path of the model
+                var oModel = new JSONModel("/Product.json");
+                return oModel;
+
+                // next go to the Component.js to set this model
+              
+            }
+
+
     };
 });
